@@ -1,16 +1,27 @@
 using System;
 
-namespace PrintInfo
+namespace SubtractionOfTwoNumbers
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string name = "Muneeb ur rehman";
-            string rollNo = "24-ST_023";
+            // Declare variables to hold the two numbers
+            int number1, number2, difference;
 
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Roll NO : " + rollNo);
+            // Prompt the user to enter the first number
+            Console.Write("Enter the first number: ");
+            number1 = int.Parse(Console.ReadLine());
+
+            // Prompt the user to enter the second number
+            Console.Write("Enter the second number: ");
+            number2 = int.Parse(Console.ReadLine());
+
+            // Calculate the difference
+            difference = number1 - number2;
+
+            // Print the result
+            Console.WriteLine("The difference between " + number1 + " and " + number2 + " is: " + difference);
         }
     }
 }
