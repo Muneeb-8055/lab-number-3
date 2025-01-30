@@ -1,13 +1,13 @@
 using System;
 
-namespace SumOfTwoNumbers
+namespace SubtractionOfTwoNumbers
 {
     class Program
     {
         static void Main(string[] args)
         {
             // Declare variables to hold the two numbers
-            int number1, number2, sum;
+            int number1, number2, difference;
 
             // Prompt the user to enter the first number
             Console.Write("Enter the first number: ");
@@ -17,11 +17,11 @@ namespace SumOfTwoNumbers
             Console.Write("Enter the second number: ");
             number2 = int.Parse(Console.ReadLine());
 
-            // Calculate the sum
-            sum = number1 + number2;
+            // Calculate the difference
+            difference = number1 - number2;
 
             // Print the result
-            Console.WriteLine("The sum of " + number1 + " and " + number2 + " is: " + sum);
+            Console.WriteLine("The difference between " + number1 + " and " + number2 + " is: " + difference);
         }
     }
 }
