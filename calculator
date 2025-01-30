@@ -1,27 +1,35 @@
 using System;
 
-namespace SubtractionOfTwoNumbers
+namespace DivisionOfTwoNumbers
 {
     class Program
     {
         static void Main(string[] args)
         {
             // Declare variables to hold the two numbers
-            int number1, number2, difference;
+            double number1, number2, result;
 
             // Prompt the user to enter the first number
             Console.Write("Enter the first number: ");
-            number1 = int.Parse(Console.ReadLine());
+            number1 = double.Parse(Console.ReadLine());
 
             // Prompt the user to enter the second number
             Console.Write("Enter the second number: ");
-            number2 = int.Parse(Console.ReadLine());
+            number2 = double.Parse(Console.ReadLine());
 
-            // Calculate the difference
-            difference = number1 - number2;
+            // Check if the second number is zero to avoid division by zero
+            if (number2 == 0)
+            {
+                Console.WriteLine("Error: Division by zero is not allowed.");
+            }
+            else
+            {
+                // Calculate the result
+                result = number1 / number2;
 
-            // Print the result
-            Console.WriteLine("The difference between " + number1 + " and " + number2 + " is: " + difference);
+                // Print the result
+                Console.WriteLine("The result of dividing " + number1 + " by " + number2 + " is: " + result);
+            }
         }
     }
 }
